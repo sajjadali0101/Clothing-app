@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/menu"
+    android:background="@color/background"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/image_1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/white_shape_with_gray_back"
+            android:text="Male"
+
+            />
+
+        <TextView
+            android:id="@+id/descp_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="30dp"
+            android:padding="5dp"
+            android:text="Description"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descp_1"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="Price in Pkr: "
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descp_1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/price"
+            android:padding="5dp"
+            android:text="Rate"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

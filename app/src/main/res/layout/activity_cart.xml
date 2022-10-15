@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart"
+    android:background="@color/background"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+
+        <EditText
+            android:id="@+id/t1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:hint="Product ID"
+            android:text="1" />
+
+        <ImageView
+            android:id="@+id/image_1"
+            android:layout_width="170dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/white_shape_with_gray_back"
+            android:text="Male"
+
+            />
+
+        <TextView
+            android:id="@+id/descp_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_1"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:text="Description"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/Rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descp_1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:text="Price in Pkr"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descp_1"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+
+            android:layout_toRightOf="@id/Rate"
+            android:padding="5dp"
+            android:text="0"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp">
+
+            <RadioButton
+                android:id="@+id/radiobtn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:layout_marginTop="10dp"
+                android:text="Stiched" />
+
+            <RadioButton
+                android:id="@+id/radiobtn_2"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:buttonTint="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="UnStiched" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/Rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radiogroup"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            >
+
+            <TextView
+                android:id="@+id/Address"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="Address"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/adress_write"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/Address"
+                android:hint="Enter your Address"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#B8B6B6"
+
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/Rel_Qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Rel"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            >
+
+            <TextView
+                android:id="@+id/Qty"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="Qty: "
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Qty_write"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/Qty"
+                android:hint="Enter Qty"
+                android:padding="5dp"
+                android:textColorHint="#B8B6B6"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Card_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Rel_Qty"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            >
+
+            <TextView
+                android:id="@+id/card"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:text="Card id"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/card"
+                android:hint="Enter Card id 1,2,3,4,5"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#B8B6B6"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/add_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Card_id"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:text="Add to Cart"
+            android:textAllCaps="false" />
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
